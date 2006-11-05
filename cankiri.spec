@@ -13,6 +13,7 @@ Requires:	gstreamer-ximagesrc
 Requires:	python-gnome-extras-egg
 Requires:	python-gstreamer
 Requires:	python-pygtk-gtk
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
