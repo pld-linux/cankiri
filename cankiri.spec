@@ -11,7 +11,7 @@ URL:		http://www.tortall.net/mu/wiki/Cankiri
 Requires:	gstreamer-theora
 Requires:	gstreamer-ximagesrc
 Requires:	python-gnome-extras-egg
-Requires:	python-gstreamer
+Requires:	python-gstreamer >= 0.10
 Requires:	python-pygtk-gtk
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
