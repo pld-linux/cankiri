@@ -1,5 +1,5 @@
 Summary:	A single file screen recorder for Linux
-Summary(pl.UTF-8):   Jednoplikowa nagrywarka ekranu dla Linuksa
+Summary(pl.UTF-8):	Jednoplikowa nagrywarka ekranu dla Linuksa
 Name:		cankiri
 Version:	0.2
 Release:	1
