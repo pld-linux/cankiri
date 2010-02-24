@@ -2,7 +2,7 @@ Summary:	A single file screen recorder for Linux
 Summary(pl.UTF-8):	Jednoplikowa nagrywarka ekranu dla Linuksa
 Name:		cankiri
 Version:	0.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications
 Source0:	http://www.tortall.net/~mu/releases/%{name}-%{version}.tar.gz
@@ -18,8 +18,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Cankiri is a single file screen recorder for Linux and other
-systems that run GStreamer 0.10 and PyGTK 2.8.
+Cankiri is a single file screen recorder for Linux and other systems
+that run GStreamer 0.10 and PyGTK 2.8.
 
 %description -l pl.UTF-8
 Cankiri to składająca się z jednego pliku nagrywarka ekranu dla
@@ -32,8 +32,7 @@ Linuksa i innych systemów, na których działa GStreamer 0.10 i PyGTK
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-
-install cankiri.py $RPM_BUILD_ROOT%{_bindir}
+install -p cankiri.py $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README
-%attr(755,root,root) %{_bindir}/cankiri.py
+%attr(755,root,root) %{_bindir}/%{name}
