@@ -9,6 +9,7 @@ Source0:	http://www.tortall.net/~mu/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	fcdc903284cfad5c115cb3164b67cd8a
 URL:		http://www.tortall.net/mu/wiki/Cankiri
 %pyrequires_eq	python-libs
+BuildRequires:	rpm-pythonprov
 Requires:	gstreamer-theora
 Requires:	gstreamer-ximagesrc
 Requires:	python-gnome-extras-egg
